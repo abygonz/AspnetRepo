@@ -1,0 +1,1 @@
+C:\Users\abima\Downloads\aspnet-mssql\app\.sonarqube\out\0

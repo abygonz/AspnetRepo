@@ -1,0 +1,8 @@
+services:
+  web:
+    image: abygonz/aspnet
+    ports:
+      - 80:80
+
+         
+       
