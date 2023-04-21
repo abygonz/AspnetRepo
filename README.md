@@ -11,7 +11,7 @@ Proyecto realizado en ASP .NET, desplegado en AKS con azure pipeline y self host
 
 ![image](https://user-images.githubusercontent.com/107892298/233513821-be238467-ac78-48ff-b53f-0882f43bfb0f.png)
 
-**c) Se genera CI/CD en Azure Devops.**
+**c) Se genera CI/CD en Azure Devops con Classic Editor.**
 
 ![image](https://user-images.githubusercontent.com/107892298/233512380-63bdfaa6-2236-4631-abc9-d80aa28b97dd.png)
 
