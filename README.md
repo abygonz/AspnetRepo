@@ -25,5 +25,8 @@ Proyecto realizado en ASP .NET, desplegado en AKS con azure pipeline y self host
 
 ![image](https://user-images.githubusercontent.com/107892298/233514207-5fe5da06-65a5-4266-a9d3-4ce2be448f16.png)
 
-**f) Se obtiene endpoint publico
+**f) Se obtiene endpoint publico**
 http://20.80.221.108/
+
+![image](https://user-images.githubusercontent.com/107892298/233514549-14ce5667-0bc8-41e0-a2a6-5dc76c6f507b.png)
+
