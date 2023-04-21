@@ -21,7 +21,7 @@ Proyecto realizado en ASP .NET, desplegado en AKS con azure pipeline y self host
 ![image](https://user-images.githubusercontent.com/107892298/233514240-bac3ad6d-cbfa-4af1-b62c-aa864a7acd38.png)
 
 
-**e) Se ejecuta job de Scrip PS.**
+**e) Se ejecuta job de Script PS.**
 
 ![image](https://user-images.githubusercontent.com/107892298/233514207-5fe5da06-65a5-4266-a9d3-4ce2be448f16.png)
 
