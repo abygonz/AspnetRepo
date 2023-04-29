@@ -1,0 +1,29 @@
+name: $(date:yyyyMMdd)$(rev:.r)
+jobs:
+- job: Job_1
+  displayName: Agent job 1
+  pool:
+    vmImage: ubuntu-latest
+  steps:
+  - checkout: self
+    fetchDepth: 1
+  - task: Docker@0
+    displayName: Build an image
+    inputs:
+      azureSubscriptionEndpoint: 33886b18-4bac-490d-b858-90b908d3313a
+      azureContainerRegistry: '{"loginServer":"imagesaks.azurecr.io", "id" : "/subscriptions/ba95e093-28c5-4c78-8b65-03dd39ea9977/resourceGroups/AKSW/providers/Microsoft.ContainerRegistry/registries/imagesaks"}'
+      includeLatestTag: true
+  - task: Docker@0
+    displayName: Push an image
+    inputs:
+      azureSubscriptionEndpoint: 33886b18-4bac-490d-b858-90b908d3313a
+      azureContainerRegistry: '{"loginServer":"imagesaks.azurecr.io", "id" : "/subscriptions/ba95e093-28c5-4c78-8b65-03dd39ea9977/resourceGroups/AKSW/providers/Microsoft.ContainerRegistry/registries/imagesaks"}'
+      action: Push an image
+      includeLatestTag: true
+  - task: KubernetesManifest@1
+    displayName: deploy
+    inputs:
+      kubernetesServiceEndpoint: b694db9b-bceb-485a-bb88-d0674bed1e88
+      namespace: default
+      manifests: aks-pipe.yaml
+...
